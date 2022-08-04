@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        caption{
+            font-size:1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+            border-bottom: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tbody tr:nth-child(even){
+            background-color: lightblue;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        td,th{
+            padding: 5px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            THEAD
+                tr,td,th
+            TBODY]
+                tr,td,th
+            TFOOT
+                tr,td,th
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width :50px;">População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">49 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">49 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">49 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">49 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">49 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">49 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">49 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>00000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsa corrupti accusantium consectetur dolorum omnis, ab mollitia illo numquam a suscipit distinctio itaque quos? Necessitatibus debitis ex sed hic sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti repellat, illo expedita obcaecati officiis. Perferendis, magnam, exercitationem officiis cumque dolore temporibus debitis ipsam numquam dolorum ab sit harum laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae vitae delectus natus quaerat maiores id nemo pariatur quo doloribus magnam voluptate fuga repellendus voluptatibus ea, sapiente officiis asperiores dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate magnam tempora molestias molestiae doloribus quos libero repellendus, dicta eos sapiente qui ullam numquam iure. Adipisci aliquid aut molestias nostrum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsa corrupti accusantium consectetur dolorum omnis, ab mollitia illo numquam a suscipit distinctio itaque quos? Necessitatibus debitis ex sed hic sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti repellat, illo expedita obcaecati officiis. Perferendis, magnam, exercitationem officiis cumque dolore temporibus debitis ipsam numquam dolorum ab sit harum laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae vitae delectus natus quaerat maiores id nemo pariatur quo doloribus magnam voluptate fuga repellendus voluptatibus ea, sapiente officiis asperiores dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate magnam tempora molestias molestiae doloribus quos libero repellendus, dicta eos sapiente qui ullam numquam iure. Adipisci aliquid aut molestias nostrum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsa corrupti accusantium consectetur dolorum omnis, ab mollitia illo numquam a suscipit distinctio itaque quos? Necessitatibus debitis ex sed hic sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti repellat, illo expedita obcaecati officiis. Perferendis, magnam, exercitationem officiis cumque dolore temporibus debitis ipsam numquam dolorum ab sit harum laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae vitae delectus natus quaerat maiores id nemo pariatur quo doloribus magnam voluptate fuga repellendus voluptatibus ea, sapiente officiis asperiores dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate magnam tempora molestias molestiae doloribus quos libero repellendus, dicta eos sapiente qui ullam numquam iure. Adipisci aliquid aut molestias nostrum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsa corrupti accusantium consectetur dolorum omnis, ab mollitia illo numquam a suscipit distinctio itaque quos? Necessitatibus debitis ex sed hic sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti repellat, illo expedita obcaecati officiis. Perferendis, magnam, exercitationem officiis cumque dolore temporibus debitis ipsam numquam dolorum ab sit harum laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae vitae delectus natus quaerat maiores id nemo pariatur quo doloribus magnam voluptate fuga repellendus voluptatibus ea, sapiente officiis asperiores dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate magnam tempora molestias molestiae doloribus quos libero repellendus, dicta eos sapiente qui ullam numquam iure. Adipisci aliquid aut molestias nostrum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsa corrupti accusantium consectetur dolorum omnis, ab mollitia illo numquam a suscipit distinctio itaque quos? Necessitatibus debitis ex sed hic sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti repellat, illo expedita obcaecati officiis. Perferendis, magnam, exercitationem officiis cumque dolore temporibus debitis ipsam numquam dolorum ab sit harum laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae vitae delectus natus quaerat maiores id nemo pariatur quo doloribus magnam voluptate fuga repellendus voluptatibus ea, sapiente officiis asperiores dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate magnam tempora molestias molestiae doloribus quos libero repellendus, dicta eos sapiente qui ullam numquam iure. Adipisci aliquid aut molestias nostrum.</p>
+</body>
+</html>
